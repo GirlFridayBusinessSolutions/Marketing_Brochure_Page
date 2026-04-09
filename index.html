@@ -91,7 +91,7 @@ nav { background:rgba(10,10,10,0.97) !important;box-shadow:0 1px 0 rgba(255,255,
 
 /* SECTION */
 .section { padding:112px 0; }
-.container { max-width:1200px;margin:0 auto;padding:0 56px; }
+.container { max-width:1400px;margin:0 auto;padding:0 32px; }
 .lbl { display:inline-flex;align-items:center;gap:10px;font-size:.65rem;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--magenta);margin-bottom:18px; }
 .lbl::before { content:'';display:block;width:22px;height:2px;background:var(--magenta); }
 .lbl-t { color:var(--teal); } .lbl-t::before { background:var(--teal); }
@@ -124,8 +124,8 @@ h2.hd-w { color:var(--white); }
 .pillar-icon { width:36px;height:36px;min-width:36px;background:var(--dark);display:flex;align-items:center;justify-content:center;transition:background .25s; }
 .pillar:hover .pillar-icon { background:var(--teal); }
 .pillar-icon svg { width:16px;height:16px;stroke:white;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round; }
-.ptitle { font-weight:700;font-size:.85rem;color:var(--dark);margin-bottom:4px; }
-.pbody  { font-size:.82rem;line-height:1.65;color:var(--gray-400); }
+.ptitle { font-weight:700;font-size:1rem;color:var(--dark);margin-bottom:4px; }
+.pbody  { font-size:.95rem;line-height:1.7;color:var(--gray-400); }
 
 /* QUOTE */
 .qband { background:var(--dark);padding:80px 0;position:relative;overflow:hidden; }
@@ -151,9 +151,9 @@ h2.hd-w { color:var(--white); }
 .card:hover .cbadge { background:var(--magenta); }
 .ctagline { font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--magenta);margin-bottom:14px;font-weight:700; }
 .ctitle { font-weight:800;font-size:1.3rem;letter-spacing:-.01em;color:var(--dark);margin-bottom:14px;line-height:1.2; }
-.cbody  { font-size:.85rem;line-height:1.75;color:var(--gray-400);margin-bottom:24px; }
+.cbody  { font-size:.95rem;line-height:1.8;color:var(--gray-400);margin-bottom:24px; }
 .clist  { list-style:none;display:flex;flex-direction:column;gap:9px; }
-.clist li { font-size:.82rem;line-height:1.6;color:var(--text-body);padding-left:18px;position:relative; }
+.clist li { font-size:.92rem;line-height:1.65;color:var(--text-body);padding-left:18px;position:relative; }
 .clist li::before { content:'→';position:absolute;left:0;color:var(--magenta);font-weight:800;transition:transform .2s; }
 .card:hover .clist li::before { transform:translateX(2px); }
 .clist li strong { font-weight:700; }
@@ -177,9 +177,9 @@ h2.hd-w { color:var(--white); }
 .pma { font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--magenta); }
 .ptag { display:inline-flex;align-items:center;background:var(--teal);color:var(--white);font-weight:800;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;padding:8px 16px;margin-bottom:20px;gap:8px; }
 .ptag-n { background:rgba(0,0,0,.2);padding:1px 6px;font-size:.6rem; }
-.pbody2 { font-size:.92rem;line-height:1.8;color:var(--gray-400);margin-bottom:28px; }
+.pbody2 { font-size:1rem;line-height:1.8;color:var(--gray-400);margin-bottom:28px; }
 .plist  { list-style:none;display:flex;flex-direction:column;gap:13px; }
-.plist li { font-size:.85rem;line-height:1.65;color:var(--text-body);padding-left:22px;position:relative;transition:transform .2s; }
+.plist li { font-size:.95rem;line-height:1.7;color:var(--text-body);padding-left:22px;position:relative;transition:transform .2s; }
 .plist li:hover { transform:translateX(4px); }
 .plist li::before { content:'→';position:absolute;left:0;color:var(--teal);font-weight:800; }
 .plist li strong { font-weight:700;color:var(--dark); }
@@ -305,16 +305,23 @@ footer { background:var(--black);padding:28px 56px;display:flex;align-items:cent
         <div class="lbl reveal d1">Our Philosophy</div>
         <h2 class="hd reveal d2">More Than Marketing.<br><span class="hi">Momentum.</span></h2>
         <p class="lead reveal d3">We're not about quick fixes or one-off posts. We build a marketing ecosystem that runs smoothly, scales with your goals, and delivers measurable results.</p>
-        <div class="pillars">
-          <div class="pillar reveal d2"><div class="pillar-icon"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><div class="ptitle">Big-picture strategy aligned with business goals</div><div class="pbody">Every campaign is designed with the end in mind: revenue, visibility, and sustainable growth.</div></div></div>
-          <div class="pillar reveal d3"><div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><div><div class="ptitle">Creative storytelling that builds trust and authority</div><div class="pbody">We turn your message into a narrative your audience believes in, remembers, and shares.</div></div></div>
-          <div class="pillar reveal d4"><div class="pillar-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="ptitle">Flawless execution   no more start-stop cycles</div><div class="pbody">Consistent, professional output that compounds over time and keeps your brand in motion.</div></div></div>
-          <div class="pillar reveal d5"><div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div><div><div class="ptitle">A complete marketing blueprint</div><div class="pbody">Strategy, content, funnels, ads, automation, and visibility   all working together.</div></div></div>
-        </div>
-      </div>
+<div class="pillars">
+  <div class="pillar">
+    <div class="pillar-icon">...</div>
+    <div>
+      <p class="ptitle">Pillar 1 Title Here</p>
+      <p class="pbody">Description text here...</p>
     </div>
   </div>
-</section>
+  <div class="pillar">
+    <div class="pillar-icon">...</div>
+    <div>
+      <p class="ptitle">Pillar 2 Title Here</p>
+      <p class="pbody">Description text here...</p>
+    </div>
+  </div>
+</div>
+      </section>
 
 <!-- QUOTE 1 -->
 <div class="qband">
