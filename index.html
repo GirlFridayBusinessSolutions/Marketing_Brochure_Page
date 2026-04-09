@@ -170,6 +170,25 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
 .fback:hover { color:var(--magenta-mid); }
 
 
+/* TYPEWRITER */
+.pcallout {
+  position: relative;
+}
+.js-on .pcallout .typewriter-text {
+  display: inline;
+  border-right: 2px solid var(--teal);
+  white-space: normal;
+  animation: cursor-blink .75s step-end infinite;
+}
+.js-on .pcallout .typewriter-text.done {
+  border-right: none;
+  animation: none;
+}
+@keyframes cursor-blink {
+  0%, 100% { border-color: var(--teal); }
+  50% { border-color: transparent; }
+}
+
 /* MICRO-MOVEMENTS */
 .ptag { transition: transform .3s var(--easing); }
 .ptag:hover { transform: translateX(6px); }
@@ -329,7 +348,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Messaging &amp; Brand Narrative</strong> – We develop the voice and story that shape how your brand is experienced. From brand voice and key messaging to tagline development and external communications, we craft language that builds trust, strengthens credibility, and moves people to action.</li>
           <li><strong>Brand Identity &amp; Consistency</strong> – We ensure your brand shows up clearly and cohesively across every touchpoint. This includes visual identity guidance, typography and color alignment, presentation templates, brand guidelines, and standards that support a consistent and professional presence.</li>
         </ul>
-        <div class="pcallout">Your Story. Sharper. Stronger. Everywhere.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Your Story. Sharper. Stronger. Everywhere."></span></div>
       </div>
     </div>
   </div>
@@ -356,7 +375,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Launch &amp; Promotional Campaigns</strong> – We support service launches, events, promotions, and seasonal initiatives with structured rollout plans including launch messaging, promotional calendars, and audience segmentation.</li>
           <li><strong>Performance Tracking &amp; Optimization</strong> – We monitor campaign performance and refine messaging, targeting, and timing to improve engagement and results.</li>
         </ul>
-        <div class="pcallout">Turn Interest into Impact.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Turn Interest into Impact."></span></div>
       </div>
     </div>
   </div>
@@ -383,7 +402,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Brand Storytelling &amp; Engagement Content</strong> – We craft content that connects and builds trust over time, including social media content, brand storytelling, client success highlights, and audience-focused messaging.</li>
           <li><strong>Content Repurposing &amp; Distribution</strong> – We extend the value of your content by adapting it across platforms. Long-form content is transformed into social posts, email content, short-form insights, and visual assets.</li>
         </ul>
-        <div class="pcallout">Content That Works Harder Than You Do.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Content That Works Harder Than You Do."></span></div>
       </div>
     </div>
   </div>
@@ -410,7 +429,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Conversion Optimization &amp; Landing Page Alignment</strong> – We ensure advertising traffic converts into meaningful action through landing page alignment, conversion tracking, and user experience improvements.</li>
           <li><strong>Performance Monitoring &amp; ROI Optimization</strong> – We track performance and refine campaigns to improve efficiency. Through ongoing analysis, testing, and optimization, we strengthen engagement and increase return on investment.</li>
         </ul>
-        <div class="pcallout">Smarter Systems. Bigger Results.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Smarter Systems. Bigger Results."></span></div>
       </div>
     </div>
   </div>
@@ -437,7 +456,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Technical SEO Foundations</strong> – From site speed and schema markup to metadata and indexing, we ensure your website performs behind the scenes so it can perform in front of your audience.</li>
           <li><strong>Content That Compounds</strong> – Blogs, service pages, and resource hubs are built to rank over time. Strategic content builds authority, strengthens credibility, and drives consistent inbound leads.</li>
         </ul>
-        <div class="pcallout">Be Found. Be Chosen. Be Trusted.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Be Found. Be Chosen. Be Trusted."></span></div>
       </div>
     </div>
   </div>
@@ -464,7 +483,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Funnels &amp; Conversion Pathways</strong> – We build structured pathways that guide prospects to action. This includes landing pages, lead magnets, nurture sequences, and conversion-focused messaging.</li>
           <li><strong>Nurture &amp; Follow-Up Strategy</strong> – We develop follow-up systems that maintain engagement and build trust over time. Automated sequences, email nurture flows, and re-engagement messaging ensure opportunities are not lost.</li>
         </ul>
-        <div class="pcallout">Measure What Matters. Improve What Performs.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Measure What Matters. Improve What Performs."></span></div>
       </div>
     </div>
   </div>
@@ -491,7 +510,7 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
           <li><strong>Branded Collateral &amp; Presentation Materials</strong> – We develop professional materials that reinforce credibility and communicate value. This includes brochures, one-sheets, pitch decks, keynote presentations, and branded assets.</li>
           <li><strong>Post-Event Content &amp; Follow-Up Momentum</strong> – We extend the value of your event presence through follow-up communications and content repurposing. Recap content, email follow-up, and social highlights help sustain engagement beyond the event.</li>
         </ul>
-        <div class="pcallout">Clear Message. Confident Market.</div>
+        <div class="pcallout"><span class="typewriter-text" data-text="Clear Message. Confident Market."></span></div>
       </div>
     </div>
   </div>
@@ -567,6 +586,33 @@ const prog = document.getElementById("prog");
 window.addEventListener("scroll", () => { const s = document.documentElement; prog.style.width = (s.scrollTop/(s.scrollHeight-s.clientHeight)*100)+"%"; }, {passive:true});
 const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("in-view"); }), {threshold:0.12});
 document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
+// TYPEWRITER EFFECT
+const typewriterObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting) {
+      const el = e.target;
+      const text = el.getAttribute('data-text');
+      if(!text || el.classList.contains('typed')) return;
+      el.classList.add('typed');
+      el.textContent = '';
+      let i = 0;
+      const speed = Math.max(28, Math.min(55, 1800 / text.length));
+      const type = () => {
+        if(i < text.length) {
+          el.textContent += text[i];
+          i++;
+          setTimeout(type, speed);
+        } else {
+          el.classList.add('done');
+        }
+      };
+      setTimeout(type, 300);
+      typewriterObs.unobserve(el);
+    }
+  });
+}, {threshold: 0.6});
+document.querySelectorAll('.typewriter-text').forEach(el => typewriterObs.observe(el));
+
 const obs2 = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add("in-view"); }), {threshold:0.1});
 document.querySelectorAll(".bgrid, .panel").forEach(el => obs2.observe(el));
 const heroBg = document.getElementById("heroBg");
