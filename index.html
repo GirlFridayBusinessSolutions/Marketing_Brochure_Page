@@ -141,7 +141,7 @@ h2.hd-w { color:var(--white); }
 
 .beyond { background:var(--dark); }
 .bgrid { display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px; }
-.bcard { background:rgba(255,255,255,.04);padding:44px 36px;position:relative;overflow:hidden;transition:background .3s,transform .3s;cursor:default; }
+.bcard { background:rgba(255,255,255,.04);padding:44px 36px;position:relative;overflow:hidden;transition:background .3s,transform .3s;cursor:pointer; }
 .bcard::before { content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--easing); }
 .bcard:hover { background:rgba(255,255,255,.08);transform:translateY(-4px); }
 .bcard:hover::before { transform:scaleX(1); }
@@ -507,27 +507,27 @@ footer { background:var(--black);padding:28px 24px;display:flex;align-items:cent
       <p class="lead lead-w">In addition to our full suite of marketing solutions, we also help organizations strengthen the systems and leadership structure that keep growth sustainable.</p>
     </div>
     <div class="bgrid">
-      <div class="bcard reveal d1">
+      <a href="https://girlfridaybusinesssolutions.com/our-operations-solutions/" target="_blank" class="bcard reveal d1" style="text-decoration:none;display:block;">
         <div class="bicon">
           <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
         <div class="btitle">Strategic Operations</div>
         <p class="bbody">Executive-level operational support that builds structure, clarifies ownership, and strengthens the infrastructure behind your growth.</p>
-      </div>
-      <div class="bcard reveal d2">
+      </a>
+      <a href="https://girlfridaybusinesssolutions.com/gf-services/#systems-engineering" target="_blank" class="bcard reveal d2" style="text-decoration:none;display:block;">
         <div class="bicon">
           <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
         <div class="btitle">Systems Engineering</div>
         <p class="bbody">Revenue Operations &amp; Automation — Custom CRM and workflow buildouts designed to support how revenue, clients, and teams operate.</p>
-      </div>
-      <div class="bcard reveal d3">
+      </a>
+      <a href="https://girlfridaybusinesssolutions.com/gf-services/#fractional-project-management" target="_blank" class="bcard reveal d3" style="text-decoration:none;display:block;">
         <div class="bicon">
           <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
         <div class="btitle">Fractional Project Management</div>
         <p class="bbody">Dedicated project leadership to manage timelines, scope, and accountability across your internal team.</p>
-      </div>
+      </a>
     </div>
   </div>
 </section>
